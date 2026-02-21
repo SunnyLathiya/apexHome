@@ -13,9 +13,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | Apex Home - Premium Real Estate Developer",
+  title: "About Us | Apex Property - Premium Real Estate Developer",
   description:
-    "Learn about Apex Home - Dehradun's trusted real estate developer with 15+ years of experience building quality homes and lasting relationships.",
+    "Learn about Apex Property - Ahmedabad's trusted real estate developer with 15+ years of experience building quality homes and lasting relationships.",
 };
 
 const milestones = [
@@ -44,9 +44,9 @@ const milestones = [
   },
   {
     year: "2024",
-    title: "MShivalik Launch",
+    title: "Mshivalik Launch",
     description:
-      "Launched our flagship project MShivalik with 120+ premium units",
+      "Launched our flagship project Mshivalik with 120+ premium units",
   },
 ];
 
@@ -84,13 +84,6 @@ const team = [
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
     bio: "With over 25 years of experience in real estate, Rushik founded Apex Home with a vision to build homes that families cherish for generations.",
-  },
-  {
-    name: "Anita Sharma",
-    role: "Director - Operations",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
-    bio: "Anita oversees all project operations, ensuring quality standards and timely delivery across all developments.",
   },
   {
     name: "Rahul Mehta",
@@ -163,7 +156,7 @@ export default function AboutPage() {
                   </div>
                   <p className="text-muted-foreground leading-relaxed">
                     To be the most trusted and preferred real estate developer
-                    in Uttarakhand, known for our unwavering commitment to
+                    in Ahmedabad, known for our unwavering commitment to
                     quality, innovation, and customer satisfaction.
                   </p>
                 </div>
@@ -339,7 +332,7 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="mt-16 grid md:grid-cols-3 gap-8">
+            <div className="mt-16 grid md:grid-cols-2 gap-8">
               {team.map((member) => (
                 <div
                   key={member.name}

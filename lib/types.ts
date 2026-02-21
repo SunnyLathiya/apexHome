@@ -24,7 +24,7 @@ export interface Project {
 export interface ProjectImage {
   src: string
   alt: string
-  category: "exterior" | "interior" | "amenities" | "floorplan"
+  category: "exterior" | "interior" | "amenities" | "floorplan" | "floorplans" | "layouts"
 }
 
 export interface Amenity {

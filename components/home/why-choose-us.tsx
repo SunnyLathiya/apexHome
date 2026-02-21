@@ -43,7 +43,7 @@ export function WhyChooseUs() {
             Why Choose Us
           </p>
           <h2 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
-            The Apex Home Difference
+            The Apex Property Difference
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             We don{"'"}t just build homes—we create lasting relationships built on trust, 

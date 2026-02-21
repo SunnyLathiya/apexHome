@@ -17,40 +17,40 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Home | Premium Real Estate Developer in Dehradun",
+  title: "Apex Property | Premium Real Estate Developer in Ahmedabad",
   description:
-    "Apex Home - Your trusted real estate developer in Dehradun. Explore our premium residential projects including MShivalik. Build your dream home with us.",
+    "Apex Property - Your trusted real estate developer in Ahmedabad. Explore our premium residential projects including Mshivalik. Build your dream home with us.",
   keywords: [
     "real estate",
-    "Dehradun",
-    "MShivalik",
-    "Apex Home",
+    "Ahmedabad",
+    "Mshivalik",
+    "Apex Property",
     "luxury homes",
     "residential projects",
   ],
-  authors: [{ name: "Apex Home" }],
+  authors: [{ name: "Apex Property" }],
   generator: "v0.app",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/photo_2026-02-21_13-02-58.jpg",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/photo_2026-02-21_13-02-58.jpg",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/photo_2026-02-21_13-02-58.jpg",
+        type: "image/jpeg",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/photo_2026-02-21_13-02-58.jpg",
   },
   openGraph: {
-    title: "Apex Home | Premium Real Estate Developer",
+    title: "Apex Property | Premium Real Estate Developer",
     description:
-      "Build your dream home with Apex Home - Dehradun's trusted real estate developer",
+      "Build your dream home with Apex Property - Ahmedabad's trusted real estate developer",
     type: "website",
   },
 };

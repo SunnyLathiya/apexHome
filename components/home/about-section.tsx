@@ -43,14 +43,14 @@ export function AboutSection() {
 
           {/* Content Side */}
           <div className="lg:pl-8">
-            <p className="text-primary uppercase tracking-[0.2em] text-sm font-medium">
-              About Apex Home
+            <p className="text-[#b5704d] uppercase tracking-[0.2em] text-sm font-medium">
+              About Apex Property
             </p>
             <h2 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
               Building Dreams Into Reality Since 2009
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              At Apex Home, we believe that a home is more than just a structure—it{"'"}s where 
+              At Apex Property, we believe that a home is more than just a structure—it{"'"}s where
               memories are made, families grow, and dreams come alive. With over 15 years of 
               experience in the real estate industry, we have established ourselves as one of 
               Dehradun{"'"}s most trusted developers.

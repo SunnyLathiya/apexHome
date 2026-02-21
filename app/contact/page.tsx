@@ -1,20 +1,24 @@
-import type { Metadata } from "next"
-import { Header } from "@/components/layout/header"
-import { Footer } from "@/components/layout/footer"
-import { WhatsAppButton } from "@/components/layout/whatsapp-button"
-import { ContactForm } from "@/components/contact/contact-form"
-import { Clock, Mail, MapPin, Phone, MessageCircle } from "lucide-react"
+import type { Metadata } from "next";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { WhatsAppButton } from "@/components/layout/whatsapp-button";
+import { ContactForm } from "@/components/contact/contact-form";
+import { Clock, Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Apex Home - Get in Touch",
-  description: "Contact Apex Home for inquiries about our residential projects in Dehradun. Visit our office, call us, or fill the contact form. We're here to help you find your dream home.",
-}
+  title: "Contact Us | Apex Property - Get in Touch",
+  description:
+    "Contact Apex Property for inquiries about our residential projects in Ahmedabad. Visit our office, call us, or fill the contact form. We're here to help you find your dream home.",
+};
 
 const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["123 Business Park, Rajpur Road,", "Dehradun, Uttarakhand 248001"],
+    details: [
+      "Vaishnodevi, sp Ring road, near lilapur",
+      "Ahmedabad, Gujarat 382471",
+    ],
     action: {
       label: "Get Directions",
       href: "https://maps.google.com/?q=Rajpur+Road+Dehradun",
@@ -23,19 +27,19 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 98765 43210", "+91 98765 43211"],
+    details: ["+91 94097 51929"],
     action: {
       label: "Call Now",
-      href: "tel:+919876543210",
+      href: "tel:+919409751929",
     },
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["info@apexhome.in", "sales@apexhome.in"],
+    details: ["info@apxproperty.co.in"],
     action: {
       label: "Send Email",
-      href: "mailto:info@apexhome.in",
+      href: "mailto:info@apxproperty.co.in",
     },
   },
   {
@@ -44,7 +48,7 @@ const contactInfo = [
     details: ["Monday - Saturday: 10 AM - 7 PM", "Sunday: 11 AM - 5 PM"],
     action: null,
   },
-]
+];
 
 export default function ContactPage() {
   return (
@@ -62,8 +66,8 @@ export default function ContactPage() {
                 Let{"'"}s Start a Conversation
               </h1>
               <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed max-w-2xl">
-                Have questions about our projects? Want to schedule a site visit? 
-                We{"'"}re here to help you find your perfect home.
+                Have questions about our projects? Want to schedule a site
+                visit? We{"'"}re here to help you find your perfect home.
               </p>
             </div>
           </div>
@@ -71,17 +75,22 @@ export default function ContactPage() {
 
         {/* Contact Info Cards */}
         <section className="py-16 bg-background">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+            style={{ marginTop: "86px" }}
+          >
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-32">
               {contactInfo.map((info) => (
-                <div 
+                <div
                   key={info.title}
                   className="bg-card rounded-xl p-6 shadow-lg border border-border"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <info.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="mt-4 font-semibold text-card-foreground">{info.title}</h3>
+                  <h3 className="mt-4 font-semibold text-card-foreground">
+                    {info.title}
+                  </h3>
                   <div className="mt-2 space-y-1">
                     {info.details.map((detail, index) => (
                       <p key={index} className="text-sm text-muted-foreground">
@@ -92,8 +101,16 @@ export default function ContactPage() {
                   {info.action && (
                     <a
                       href={info.action.href}
-                      target={info.action.href.startsWith("http") ? "_blank" : undefined}
-                      rel={info.action.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      target={
+                        info.action.href.startsWith("http")
+                          ? "_blank"
+                          : undefined
+                      }
+                      rel={
+                        info.action.href.startsWith("http")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
                       className="inline-block mt-4 text-sm font-medium text-primary hover:underline"
                     >
                       {info.action.label} →
@@ -115,7 +132,8 @@ export default function ContactPage() {
                   Send Us a Message
                 </h2>
                 <p className="mt-4 text-muted-foreground">
-                  Fill out the form below and our team will get back to you within 24 hours.
+                  Fill out the form below and our team will get back to you
+                  within 24 hours.
                 </p>
                 <div className="mt-8">
                   <ContactForm />
@@ -128,7 +146,8 @@ export default function ContactPage() {
                   Find Us
                 </h2>
                 <p className="mt-4 text-muted-foreground">
-                  Visit our office to explore our projects and speak with our team in person.
+                  Visit our office to explore our projects and speak with our
+                  team in person.
                 </p>
 
                 {/* Map Placeholder */}
@@ -136,8 +155,9 @@ export default function ContactPage() {
                   <div className="text-center p-8">
                     <MapPin className="h-12 w-12 text-muted-foreground mx-auto" />
                     <p className="mt-4 text-muted-foreground">
-                      123 Business Park, Rajpur Road,<br />
-                      Dehradun, Uttarakhand 248001
+                      Vaishnodevi, Sp Ring read near lilapur,
+                      <br />
+                      Ahmedabad, Gujarat 382481
                     </p>
                     <a
                       href="https://maps.google.com/?q=Rajpur+Road+Dehradun"
@@ -158,12 +178,15 @@ export default function ContactPage() {
                       <MessageCircle className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Chat with Us on WhatsApp</h3>
+                      <h3 className="font-semibold text-foreground">
+                        Chat with Us on WhatsApp
+                      </h3>
                       <p className="mt-1 text-sm text-muted-foreground">
-                        Get instant responses to your queries. Our team is available from 10 AM to 7 PM.
+                        Get instant responses to your queries. Our team is
+                        available from 10 AM to 7 PM.
                       </p>
                       <a
-                        href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20learning%20more%20about%20your%20properties."
+                        href="https://wa.me/919409751929?text=Hi!%20I'm%20interested%20in%20learning%20more%20about%20your%20Apex%20properties."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium"
@@ -210,8 +233,13 @@ export default function ContactPage() {
                   a: "Yes, all our projects are RERA registered and comply with all necessary legal requirements. We believe in complete transparency in all our dealings.",
                 },
               ].map((faq, index) => (
-                <div key={index} className="bg-card rounded-xl p-6 border border-border">
-                  <h3 className="font-semibold text-card-foreground">{faq.q}</h3>
+                <div
+                  key={index}
+                  className="bg-card rounded-xl p-6 border border-border"
+                >
+                  <h3 className="font-semibold text-card-foreground">
+                    {faq.q}
+                  </h3>
                   <p className="mt-3 text-muted-foreground">{faq.a}</p>
                 </div>
               ))}
@@ -222,5 +250,5 @@ export default function ContactPage() {
       <Footer />
       <WhatsAppButton />
     </>
-  )
+  );
 }

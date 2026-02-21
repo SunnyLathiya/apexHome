@@ -122,8 +122,6 @@ export function InquiryForm({ projectName }: InquiryFormProps) {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="2bhk">2 BHK</SelectItem>
-              <SelectItem value="3bhk">3 BHK</SelectItem>
-              <SelectItem value="both">Both</SelectItem>
             </SelectContent>
           </Select>
         </div>

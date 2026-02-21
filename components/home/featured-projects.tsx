@@ -6,14 +6,13 @@ import { ArrowRight, MapPin, Home, Maximize } from "lucide-react";
 const projects = [
   {
     id: "mshivalik",
-    name: "MShivalik",
-    location: "Rajpur Road, Dehradun",
+    name: "Mshivalik",
+    location: "Vaishnodevi, sp Ring road, near lilapur, Ahmedabad",
     status: "ongoing",
     type: "Residential",
     units: "120+ Units",
-    size: "2 & 3 BHK",
-    image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop",
+    size: "2 BHK",
+    image: "/image_7_enhanced.png",
     description:
       "Premium residential apartments with stunning mountain views and world-class amenities.",
     featured: true,
