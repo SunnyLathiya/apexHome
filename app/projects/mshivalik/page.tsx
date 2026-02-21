@@ -31,59 +31,53 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "MShivalik | Premium Residential Apartments in Dehradun | Apex Home",
+  title:
+    "Mshivalik | Premium Residential Apartments in Ahmedabad | Apex Property",
   description:
-    "Discover MShivalik - Premium 2 & 3 BHK apartments in Rajpur Road, Dehradun with stunning mountain views, modern amenities, and world-class facilities. Starting from ₹65 Lakhs.",
+    "Discover Mshivalik - Premium 2 BHK apartments in Vaishnodevi, sp Ring road, near lilapur, Ahmedabad with stunning views, modern amenities, and world-class facilities. Starting from ₹65 Lakhs.",
   keywords: [
-    "MShivalik",
-    "apartments in Dehradun",
-    "2 BHK Dehradun",
-    "3 BHK Dehradun",
-    "Rajpur Road",
-    "Apex Home",
+    "Mshivalik",
+    "apartments in Ahmedabad",
+    "2 BHK Ahmedabad",
+    "Apex Property",
   ],
 };
 
 const projectImages = [
   {
-    src: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop",
-    alt: "MShivalik Exterior View",
+    src: "/image_7_enhanced.png",
+    alt: "Mshivalik - Building Exterior Render",
     category: "exterior",
   },
   {
-    src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop",
-    alt: "Building Facade",
-    category: "exterior",
+    src: "/image_1_enhanced.png",
+    alt: "Ground Floor Layout - Commercial Shops",
+    category: "layouts",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-    alt: "Living Room Interior",
-    category: "interior",
+    src: "/image_2_enhanced.png",
+    alt: "First Floor Layout - Residential Units",
+    category: "layouts",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-    alt: "Master Bedroom",
-    category: "interior",
+    src: "/image_3_enhanced.png",
+    alt: "Typical Floor Layout - Residential Units",
+    category: "layouts",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2070&auto=format&fit=crop",
-    alt: "Modern Kitchen",
-    category: "interior",
+    src: "/image_4_enhanced.png",
+    alt: "13th Floor Penthouse Layout",
+    category: "layouts",
   },
   {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-    alt: "Dining Area",
-    category: "interior",
+    src: "/image_5_enhanced.png",
+    alt: "2 BHK Type-A Unit Plan",
+    category: "floorplans",
   },
   {
-    src: "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=2084&auto=format&fit=crop",
-    alt: "Swimming Pool",
-    category: "amenities",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop",
-    alt: "Fitness Center",
-    category: "amenities",
+    src: "/image_6_enhanced.png",
+    alt: "2 BHK Type-C Unit Plan",
+    category: "floorplans",
   },
 ];
 
@@ -162,39 +156,6 @@ const floorPlans = [
       "Utility Area",
     ],
   },
-  {
-    name: "3 BHK - Type A",
-    size: "1,580 sq.ft.",
-    price: "₹89 Lakhs*",
-    bedrooms: 3,
-    bathrooms: 3,
-    features: [
-      "Living Room",
-      "Dining Area",
-      "Modular Kitchen",
-      "3 Bedrooms",
-      "3 Bathrooms",
-      "2 Balconies",
-      "Study",
-    ],
-  },
-  {
-    name: "3 BHK - Type B",
-    size: "1,850 sq.ft.",
-    price: "₹1.05 Cr*",
-    bedrooms: 3,
-    bathrooms: 3,
-    features: [
-      "Living Room",
-      "Dining Area",
-      "Modular Kitchen",
-      "3 Bedrooms",
-      "3 Bathrooms",
-      "3 Balconies",
-      "Study",
-      "Servant Room",
-    ],
-  },
 ];
 
 const highlights = [
@@ -215,8 +176,8 @@ export default function MSHivalikPage() {
         <section className="relative pt-20">
           <div className="relative h-[70vh] min-h-[500px]">
             <img
-              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop"
-              alt="MShivalik - Premium Residential Project"
+              src="/image_7_enhanced.png"
+              alt="Mshivalik - Premium Residential Project"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -227,16 +188,16 @@ export default function MSHivalikPage() {
                   Now Selling
                 </Badge>
                 <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-                  MShivalik
+                  Mshivalik
                 </h1>
                 <div className="flex items-center gap-2 mt-4 text-white/80">
                   <MapPin className="h-5 w-5" />
                   <span className="text-lg">
-                    Rajpur Road, Dehradun, Uttarakhand
+                    Vaishnodevi, Sp Ring read near lilapur, Ahmedabad
                   </span>
                 </div>
                 <p className="mt-4 text-white/70 max-w-2xl text-lg">
-                  Premium 2 & 3 BHK apartments with panoramic mountain views and
+                  Premium 2 BHK apartments with panoramic mountain views and
                   world-class amenities in Dehradun{"'"}s most sought-after
                   location.
                 </p>
@@ -246,7 +207,7 @@ export default function MSHivalikPage() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4">
                     <div className="flex items-center gap-2 text-white">
                       <Home className="h-5 w-5" />
-                      <span className="font-semibold">2 & 3 BHK</span>
+                      <span className="font-semibold">2 BHK</span>
                     </div>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4">
@@ -288,11 +249,11 @@ export default function MSHivalikPage() {
                   {/* Overview Tab */}
                   <TabsContent value="overview" className="mt-8">
                     <h2 className="font-serif text-3xl font-bold text-foreground">
-                      About MShivalik
+                      About Mshivalik
                     </h2>
                     <div className="mt-6 prose prose-lg max-w-none text-muted-foreground">
                       <p>
-                        MShivalik is Apex Home{"'"}s flagship residential
+                        Mshivalik is Apex Home{"'"}s flagship residential
                         project, offering a perfect blend of luxury, comfort,
                         and natural beauty. Located on the prestigious Rajpur
                         Road, this development provides residents with easy
@@ -300,8 +261,8 @@ export default function MSHivalikPage() {
                         shopping centers, and entertainment venues.
                       </p>
                       <p>
-                        With thoughtfully designed 2 & 3 BHK apartments ranging
-                        from 1,150 to 1,850 sq.ft., MShivalik caters to diverse
+                        With thoughtfully designed 2 BHK apartments ranging from
+                        1,150 to 1,850 sq.ft., Mshivalik caters to diverse
                         family needs. Every unit is crafted to maximize natural
                         light, ventilation, and offers stunning views of the
                         surrounding mountains.
@@ -362,7 +323,7 @@ export default function MSHivalikPage() {
                               Configurations
                             </dt>
                             <dd className="font-medium text-foreground">
-                              2 & 3 BHK
+                              2 BHK
                             </dd>
                           </div>
                           <div className="flex justify-between">
@@ -384,12 +345,6 @@ export default function MSHivalikPage() {
                             <dt className="text-muted-foreground">2 BHK</dt>
                             <dd className="font-medium text-primary">
                               ₹65 - 72 Lakhs
-                            </dd>
-                          </div>
-                          <div className="flex justify-between">
-                            <dt className="text-muted-foreground">3 BHK</dt>
-                            <dd className="font-medium text-primary">
-                              ₹89 Lakhs - 1.05 Cr
                             </dd>
                           </div>
                           <div className="flex justify-between">
@@ -427,7 +382,7 @@ export default function MSHivalikPage() {
                       World-Class Amenities
                     </h2>
                     <p className="mt-4 text-muted-foreground">
-                      MShivalik offers over 15 premium amenities designed to
+                      Mshivalik offers over 15 premium amenities designed to
                       enhance your lifestyle.
                     </p>
                     <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -459,6 +414,26 @@ export default function MSHivalikPage() {
                       Choose from our range of thoughtfully designed
                       configurations.
                     </p>
+
+                    {/* Detailed Unit Plans */}
+                    <div className="mt-8 grid sm:grid-cols-2 gap-6">
+                      <div className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-lg transition-shadow">
+                        <img
+                          src="/image_5_enhanced.png"
+                          alt="2 BHK Type-A Floor Plan"
+                          className="w-full h-auto"
+                        />
+                      </div>
+                      <div className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-lg transition-shadow">
+                        <img
+                          src="/image_6_enhanced.png"
+                          alt="2 BHK Type-C Floor Plan"
+                          className="w-full h-auto"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Floor Plan Details */}
                     <div className="mt-8 grid sm:grid-cols-2 gap-6">
                       {floorPlans.map((plan) => (
                         <div
@@ -514,7 +489,7 @@ export default function MSHivalikPage() {
                       Prime Location
                     </h2>
                     <p className="mt-4 text-muted-foreground">
-                      MShivalik is strategically located on Rajpur Road,
+                      Mshivalik is strategically located on Rajpur Road,
                       providing easy access to all essential amenities and
                       attractions.
                     </p>
@@ -524,7 +499,7 @@ export default function MSHivalikPage() {
                       <div className="text-center">
                         <MapPin className="h-12 w-12 text-muted-foreground mx-auto" />
                         <p className="mt-4 text-muted-foreground">
-                          Rajpur Road, Dehradun, Uttarakhand
+                          Vaishnodevi, Sp Ring read near lilapur, Ahmedabad
                         </p>
                         <Button
                           asChild
@@ -613,7 +588,7 @@ export default function MSHivalikPage() {
               {/* Right Sidebar - 1/3 */}
               <div className="lg:col-span-1 space-y-8">
                 {/* Inquiry Form */}
-                <InquiryForm projectName="MShivalik" />
+                <InquiryForm projectName="Mshivalik" />
 
                 {/* Quick Actions */}
                 <div className="bg-card rounded-xl p-6 shadow-lg space-y-4">
@@ -621,7 +596,7 @@ export default function MSHivalikPage() {
                     asChild
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                   >
-                    <a href="tel:+919876543210">
+                    <a href="tel:+919409751929">
                       <Phone className="mr-2 h-4 w-4" />
                       Call Now
                     </a>
@@ -629,9 +604,12 @@ export default function MSHivalikPage() {
                   <Button
                     variant="outline"
                     className="w-full border-border bg-transparent"
+                    asChild
                   >
-                    <Download className="mr-2 h-4 w-4" />
-                    Download Brochure
+                    <a href="/apartment.pdf" download>
+                      <Download className="mr-2 h-4 w-4" />
+                      Download Brochure
+                    </a>
                   </Button>
                 </div>
 
@@ -641,9 +619,9 @@ export default function MSHivalikPage() {
                     Sales Office
                   </h4>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    123 Business Park, Rajpur Road,
+                    Vaishnodevi, Sp Ring read near lilapur,
                     <br />
-                    Dehradun, Uttarakhand 248001
+                    Ahmedabad, Gujarat 382481
                   </p>
                   <p className="mt-4 text-sm text-muted-foreground">
                     <strong>Hours:</strong> Mon-Sun, 10 AM - 7 PM

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Phone,
   Mail,
@@ -15,7 +16,7 @@ const footerLinks = {
     { href: "/projects", label: "Projects" },
     { href: "/contact", label: "Contact" },
   ],
-  projects: [{ href: "/projects/mshivalik", label: "MShivalik" }],
+  projects: [{ href: "/projects/mshivalik", label: "Mshivalik" }],
   legal: [
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Service" },
@@ -38,13 +39,17 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
-              <span className="font-serif text-2xl font-bold text-sidebar-foreground">
-                Apex Home
-              </span>
+              <Image
+                src="/photo_2026-02-21_13-02-58.jpg"
+                alt="Apex Property"
+                width={180}
+                height={70}
+                className="h-16 w-auto object-contain"
+              />
             </Link>
             <p className="mt-4 text-sm text-sidebar-foreground/70 leading-relaxed">
               Building dreams into reality. Your trusted partner in finding the
-              perfect home in Dehradun.
+              perfect home in Ahmedabad.
             </p>
             {/* Social Links */}
             <div className="mt-6 flex items-center gap-4">
@@ -110,18 +115,18 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 text-sidebar-primary shrink-0" />
                 <span className="text-sm text-sidebar-foreground/70">
-                  123 Business Park, Rajpur Road,
+                  Vaishnodevi, Sp Ring read near lilapur,
                   <br />
-                  Dehradun, Uttarakhand 248001
+                  Ahmedabad, Gujarat 382481
                 </span>
               </li>
               <li>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919409751929"
                   className="flex items-center gap-3 text-sm text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors"
                 >
                   <Phone className="h-5 w-5 text-sidebar-primary shrink-0" />
-                  +91 98765 43210
+                  +91 94097 51929
                 </a>
               </li>
               <li>
@@ -140,7 +145,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-sidebar-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-sidebar-foreground/60">
-            © {new Date().getFullYear()} Apex Home. All rights reserved.
+            © {new Date().getFullYear()} Apex Property. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {footerLinks.legal.map((link) => (

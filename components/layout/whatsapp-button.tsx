@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { MessageCircle } from "lucide-react"
+import { MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
-  const phoneNumber = "919876543210"
-  const message = "Hi! I'm interested in learning more about your properties."
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+  const phoneNumber = "919409751929";
+  const message = "Hi! I'm interested in learning more about your Apex properties.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <a
@@ -17,5 +17,5 @@ export function WhatsAppButton() {
     >
       <MessageCircle className="h-6 w-6" />
     </a>
-  )
+  );
 }

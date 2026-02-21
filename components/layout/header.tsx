@@ -1,49 +1,52 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Menu, X, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
-]
+];
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+          ? "bg-background/98 backdrop-blur-lg shadow-md border-b border-border/50"
+          : "bg-transparent",
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className={cn(
-              "font-serif text-2xl font-bold tracking-tight transition-colors",
-              isScrolled ? "text-foreground" : "text-white"
-            )}>
-              Apex Home
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/photo_2026-02-21_13-02-58.jpg"
+              alt="Apex Property"
+              width={160}
+              height={60}
+              className="h-14 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,8 +56,10 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium tracking-wide uppercase transition-colors hover:text-primary",
-                  isScrolled ? "text-foreground" : "text-white"
+                  "text-sm font-medium tracking-wide uppercase transition-colors",
+                  isScrolled 
+                    ? "text-foreground hover:text-[#b5704d]" 
+                    : "text-white hover:text-[#d4a574]",
                 )}
               >
                 {link.label}
@@ -65,16 +70,21 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+919876543210"
+              href="tel:+919409751929"
               className={cn(
                 "flex items-center gap-2 text-sm font-medium transition-colors",
-                isScrolled ? "text-foreground" : "text-white"
+                isScrolled 
+                  ? "text-foreground hover:text-[#b5704d]" 
+                  : "text-white hover:text-[#d4a574]",
               )}
             >
               <Phone className="h-4 w-4" />
-              +91 98765 43210
+              +91 94097 51929
             </a>
-            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button
+              asChild
+              className="bg-[#b5704d] hover:bg-[#9a5d3f] text-white"
+            >
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
@@ -87,9 +97,19 @@ export function Header() {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className={cn("h-6 w-6", isScrolled ? "text-foreground" : "text-white")} />
+              <X
+                className={cn(
+                  "h-6 w-6",
+                  isScrolled ? "text-foreground" : "text-white",
+                )}
+              />
             ) : (
-              <Menu className={cn("h-6 w-6", isScrolled ? "text-foreground" : "text-white")} />
+              <Menu
+                className={cn(
+                  "h-6 w-6",
+                  isScrolled ? "text-foreground" : "text-white",
+                )}
+              />
             )}
           </button>
         </div>
@@ -109,7 +129,10 @@ export function Header() {
                 </Link>
               ))}
               <div className="px-4 pt-4 border-t border-border mt-2">
-                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button
+                  asChild
+                  className="w-full bg-[#b5704d] hover:bg-[#9a5d3f] text-white"
+                >
                   <Link href="/contact">Get in Touch</Link>
                 </Button>
               </div>
@@ -118,5 +141,5 @@ export function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }
