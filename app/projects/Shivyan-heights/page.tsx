@@ -312,9 +312,9 @@ export default function ShivyanHeightsPage() {
         {/* Hero Section */}
         <section className="relative pt-20">
           {/* hero wrapper now has a gradient fallback so it never looks completely blank */}
-          <div className="relative h-[70vh] min-h-[500px] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
+          <div className="relative min-h-[70vh] flex flex-col justify-end bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
             {/* Split 2-image hero background */}
-            <div className="absolute inset-0 grid grid-cols-2">
+            <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-2">
               <img
                 src="/shivyanHeights/page_3.png"
                 alt="Shivyan heights - Tower A Exterior"
@@ -323,12 +323,12 @@ export default function ShivyanHeightsPage() {
               <img
                 src="/shivyanHeights/page_2.png"
                 alt="Shivyan heights - Tower B Exterior"
-                className="w-full h-full object-cover object-center"
+                className="hidden md:block w-full h-full object-cover object-center"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20" />
 
-            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+            <div className="relative w-full p-6 pt-24 md:p-16">
               <div className="mx-auto max-w-7xl">
                 <Badge className="bg-green-500/90 text-white border-0 mb-4">
                   Now Selling
@@ -342,9 +342,9 @@ export default function ShivyanHeightsPage() {
                     near vaishnodevi, Sp Ring read near lilapur, Ahmedabad
                   </span>
                 </div>
-                <p className="mt-4 text-white max-w-2xl text-lg">
+                <p className="mt-4 text-white max-w-2xl text-lg mb-8">
                   Affortable 2 BHK flats in ahmedabad, near vaishnodevi circle
-                  and world-class amenities in Ahmedabad{'"'}s most sought-after
+                  and world-class amenities in Ahmedabad&apos;s most sought-after
                   location.
                 </p>
 
@@ -393,14 +393,14 @@ export default function ShivyanHeightsPage() {
                         <span className="font-semibold">500 - 1100 sq.ft.</span>
                       </div>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3">
+                    {/* <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3">
                       <div className="flex items-center gap-2 text-white">
                         <IndianRupee className="h-5 w-5" />
                         <span className="font-semibold">
                           Starting ₹10 Lakhs
                         </span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -411,12 +411,12 @@ export default function ShivyanHeightsPage() {
         {/* Main Content */}
         <section className="py-16 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {/* Left Content - 2/3 */}
-              <div className="lg:col-span-2">
+              <div className="lg:col-span-2 min-w-0">
                 {/* Tabs */}
                 <Tabs defaultValue="overview" className="w-full">
-                  <TabsList className="w-full justify-start bg-muted overflow-x-auto flex-nowrap">
+                  <TabsList className="w-full justify-start bg-muted overflow-x-auto flex-nowrap no-scrollbar">
                     <TabsTrigger value="overview">Overview</TabsTrigger>
                     <TabsTrigger value="gallery">Gallery</TabsTrigger>
                     <TabsTrigger value="amenities">Amenities</TabsTrigger>
@@ -595,7 +595,7 @@ export default function ShivyanHeightsPage() {
                             </div>
                           </dl>
                         </div>
-                        <div className="bg-muted rounded-lg p-6">
+                        {/* <div className="bg-muted rounded-lg p-6">
                           <h4 className="font-semibold text-foreground">
                             Pricing
                           </h4>
@@ -623,7 +623,7 @@ export default function ShivyanHeightsPage() {
                               </dd>
                             </div>
                           </dl>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </TabsContent>
