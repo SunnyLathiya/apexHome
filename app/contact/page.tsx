@@ -21,7 +21,7 @@ const contactInfo = [
     ],
     action: {
       label: "Get Directions",
-      href: "https://maps.google.com/?q=Rajpur+Road+Dehradun",
+      href: "https://maps.google.com/?q=Rajpur+Road+Ahmedabad",
     },
   },
   {
@@ -160,7 +160,7 @@ export default function ContactPage() {
                       Ahmedabad, Gujarat 382481
                     </p>
                     <a
-                      href="https://maps.google.com/?q=Rajpur+Road+Dehradun"
+                      href="https://maps.google.com/?q=Rajpur+Road+Ahmedabad"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"

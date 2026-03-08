@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Award, Shield, Users } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Award, Shield, Users } from "lucide-react";
 
 const features = [
   {
@@ -18,7 +18,7 @@ const features = [
     title: "Customer First",
     description: "Your satisfaction is our top priority",
   },
-]
+];
 
 export function AboutSection() {
   return (
@@ -37,7 +37,9 @@ export function AboutSection() {
             {/* Floating Card */}
             <div className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground p-8 rounded-lg shadow-xl max-w-xs hidden md:block">
               <p className="font-serif text-4xl font-bold">15+</p>
-              <p className="text-sm mt-1 opacity-90">Years of Excellence in Real Estate</p>
+              <p className="text-sm mt-1 opacity-90">
+                Years of Excellence in Real Estate
+              </p>
             </div>
           </div>
 
@@ -50,14 +52,16 @@ export function AboutSection() {
               Building Dreams Into Reality Since 2009
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              At Apex Property, we believe that a home is more than just a structure—it{"'"}s where
-              memories are made, families grow, and dreams come alive. With over 15 years of 
-              experience in the real estate industry, we have established ourselves as one of 
-              Dehradun{"'"}s most trusted developers.
+              At Apex Property, we believe that a home is more than just a
+              structure—it{"'"}s where memories are made, families grow, and
+              dreams come alive. With over 15 years of experience in the real
+              estate industry, we have established ourselves as one of Ahmedabad
+              {"'"}s most trusted developers.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our commitment to quality construction, timely delivery, and transparent dealings 
-              has earned us the trust of hundreds of families who now call our developments their home.
+              Our commitment to quality construction, timely delivery, and
+              transparent dealings has earned us the trust of hundreds of
+              families who now call our developments their home.
             </p>
 
             {/* Features */}
@@ -68,15 +72,22 @@ export function AboutSection() {
                     <feature.icon className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">{feature.title}</h3>
-                    <p className="text-sm text-muted-foreground mt-1">{feature.description}</p>
+                    <h3 className="font-semibold text-foreground">
+                      {feature.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* CTA */}
-            <Button asChild className="mt-10 bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button
+              asChild
+              className="mt-10 bg-primary hover:bg-primary/90 text-primary-foreground"
+            >
               <Link href="/about">
                 Learn More About Us
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -86,5 +97,5 @@ export function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

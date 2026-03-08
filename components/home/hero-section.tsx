@@ -34,7 +34,7 @@ export function HeroSection() {
           {/* Subtitle */}
           <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed text-pretty">
             Discover exceptional living spaces crafted with precision and
-            passion in the heart of Dehradun. Your journey to luxury living
+            passion in the heart of Ahmedabad. Your journey to luxury living
             begins here.
           </p>
 

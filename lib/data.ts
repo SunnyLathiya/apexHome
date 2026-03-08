@@ -12,16 +12,16 @@ import type {
 export const mockProjects: Project[] = [
   {
     _id: "1",
-    name: "Mshivalik",
-    slug: "mshivalik",
+    name: "Shivyan heights",
+    slug: "Shivyan heights",
     location: "Vaishnodevi, sp Ring road, near lilapur, Ahmedabad",
     status: "ongoing",
     type: "Residential",
-    units: "120+ Units",
+    units: "100 Units & 11 Shops",
     size: "2 BHK",
     priceRange: "Starting from ₹65 Lakhs",
     description:
-      "Premium residential apartments with stunning mountain views and world-class amenities in Dehradun's most sought-after location.",
+      "Premium residential apartments with stunning mountain views and world-class amenities in Ahmedabad's most sought-after location.",
     highlights: [
       "RERA Registered",
       "Premium Location",
@@ -32,18 +32,28 @@ export const mockProjects: Project[] = [
     ],
     images: [
       {
-        src: "/image_7_enhanced.png",
-        alt: "Mshivalik Building Exterior",
+        src: "/shivyanHeights/page_2.png",
+        alt: "Shivyan Heights - Project Overview",
         category: "exterior",
       },
       {
-        src: "/image_5_enhanced.png",
-        alt: "2 BHK Type-A Unit Plan",
+        src: "/shivyanHeights/page_3.png",
+        alt: "Shivyan Heights - Building View",
+        category: "exterior",
+      },
+      {
+        src: "/shivyanHeights/page_4.png",
+        alt: "Shivyan Heights - Exterior & Amenities",
+        category: "exterior",
+      },
+      {
+        src: "/shivyanHeights/page_9.png",
+        alt: "2 BHK Type-A Floor Plan",
         category: "floorplans",
       },
       {
-        src: "/image_6_enhanced.png",
-        alt: "2 BHK Type-C Unit Plan",
+        src: "/shivyanHeights/page_10.png",
+        alt: "2 BHK Type-C Floor Plan",
         category: "floorplans",
       },
     ],
@@ -81,9 +91,9 @@ export const mockProjects: Project[] = [
         ],
       },
     ],
-    seoTitle: "Mshivalik | Premium Apartments in Dehradun",
+    seoTitle: "Shivyan heights | Premium Apartments in Ahmedabad",
     seoDescription:
-      "Discover Mshivalik - Premium 2 BHK apartments in Dehradun with stunning mountain views.",
+      "Discover Shivyan heights - Premium 2 BHK apartments in Ahmedabad with stunning mountain views.",
     featured: true,
     createdAt: new Date("2024-01-15"),
     updatedAt: new Date("2024-06-20"),
@@ -96,7 +106,7 @@ export const mockInquiries: Inquiry[] = [
     name: "Rushik Patel",
     email: "rushikpatel184@gmail.com",
     phone: "+91 94097 51929",
-    project: "Mshivalik",
+    project: "Shivyan heights",
     configuration: "2BHK",
     message:
       "I am interested in 2 BHK apartments. Please share the pricing details and available units.",
@@ -109,7 +119,7 @@ export const mockInquiries: Inquiry[] = [
     name: "Rajesh Patel",
     email: "Rajesh.patel@email.com",
     phone: "+91 94097 51929",
-    project: "Mshivalik",
+    project: "Shivyan heights",
     configuration: "2BHK",
     message: "Would like to schedule a site visit this weekend.",
     status: "contacted",
@@ -122,7 +132,7 @@ export const mockTestimonials: Testimonial[] = [
   {
     _id: "1",
     name: "Rajesh Sharma",
-    role: "Homeowner at Mshivalik",
+    role: "Homeowner at Shivyan heights",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200",
     content:
