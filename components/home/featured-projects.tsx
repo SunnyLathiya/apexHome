@@ -5,14 +5,14 @@ import { ArrowRight, MapPin, Home, Maximize } from "lucide-react";
 
 const projects = [
   {
-    id: "mshivalik",
-    name: "Mshivalik",
+    id: "Shivyan-heights",
+    name: "Shivyan heights",
     location: "Vaishnodevi, sp Ring road, near lilapur, Ahmedabad",
     status: "ongoing",
     type: "Residential",
-    units: "120+ Units",
+    units: "100 Units & 11 Shops",
     size: "2 BHK",
-    image: "/image_7_enhanced.png",
+    image: "/shivyanHeights/page_2.png",
     description:
       "Premium residential apartments with stunning mountain views and world-class amenities.",
     featured: true,

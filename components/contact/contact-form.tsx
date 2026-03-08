@@ -155,7 +155,7 @@ export function ContactForm() {
             <SelectValue placeholder="Select project (optional)" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="mshivalik">Mshivalik</SelectItem>
+            <SelectItem value="Shivyan heights">Shivyan heights</SelectItem>
             <SelectItem value="upcoming">Upcoming Projects</SelectItem>
             <SelectItem value="general">General Information</SelectItem>
           </SelectContent>

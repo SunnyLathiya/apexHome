@@ -15,16 +15,17 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    id: "mshivalik",
-    name: "Mshivalik",
+    id: "Shivyan-heights",
+    name: "Shivyan heights",
     location:
       "Vaishnodevi, sp Ring road, near lilapur, Ahmedabad, Gujarat 382471",
     status: "ongoing",
     type: "Residential",
-    units: "120+ Units",
+    units: "100 Units",
     size: "2 BHK",
     priceRange: "Starting from ₹65 Lakhs",
-    image: "/image_7_enhanced.png",
+    // use main Shivyan Heights exterior shot from public folder
+    image: "/shivyanHeights/page_3.png",
     description:
       "Premium residential apartments with stunning mountain views and world-class amenities.",
     highlights: [
@@ -66,7 +67,7 @@ export default function ProjectsPage() {
               </h1>
               <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed max-w-2xl">
                 Explore our thoughtfully designed residential projects that
-                combine modern living with the natural beauty of Dehradun.
+                combine modern living with the natural beauty of Ahmedabad.
               </p>
             </div>
           </div>

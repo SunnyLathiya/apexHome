@@ -16,7 +16,7 @@ const footerLinks = {
     { href: "/projects", label: "Projects" },
     { href: "/contact", label: "Contact" },
   ],
-  projects: [{ href: "/projects/mshivalik", label: "Mshivalik" }],
+  projects: [{ href: "/projects/Shivyan-heights", label: "Shivyan heights" }],
   legal: [
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Service" },

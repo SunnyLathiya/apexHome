@@ -19,11 +19,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Apex Property | Premium Real Estate Developer in Ahmedabad",
   description:
-    "Apex Property - Your trusted real estate developer in Ahmedabad. Explore our premium residential projects including Mshivalik. Build your dream home with us.",
+    "Apex Property - Your trusted real estate developer in Ahmedabad. Explore our premium residential projects including Shivyan heights. Build your dream home with us.",
   keywords: [
     "real estate",
     "Ahmedabad",
-    "Mshivalik",
+    "Shivyan heights",
     "Apex Property",
     "luxury homes",
     "residential projects",
